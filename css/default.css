@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Spoqa Han Sans', 'NanumBarunGothic', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
 	margin: 0;
 }
 
@@ -39,7 +39,7 @@ h4,
 h5,
 h6,
 b {
-	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Spoqa Han Sans', 'NanumBarunGothic', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
 }
 
 input[type=password] {
@@ -346,7 +346,7 @@ del, s, strike {
 }
 
 .Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed {
-    position: fixed;
+    position: static;
     z-index: 999;
 }
 
