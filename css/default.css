@@ -14,7 +14,6 @@ input:hover, button:hover, select:hover {
 
 html {
     font-size: 15px;
-    font-smoothing: antialiased;
 }
 
 body {
@@ -627,10 +626,11 @@ del, s, strike {
 /* 컨텐츠 하단 수정 End */
 
 /* 모달 수정 */
+/*
 .Liberty .login-modal {
 
 }
-
+*/
 .Liberty .login-modal .modal-sm {
     width: 25rem;
 }
