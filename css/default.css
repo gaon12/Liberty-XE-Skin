@@ -14,7 +14,6 @@ input:hover, button:hover, select:hover {
 
 html {
     font-size: 15px;
-    font-smoothing: antialiased;
 }
 
 body {
@@ -28,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Spoqa Han Sans', 'NanumBarunGothic', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
 	margin: 0;
 }
 
@@ -39,7 +38,7 @@ h4,
 h5,
 h6,
 b {
-	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-family: 'Noto Sans KR', 'Noto Sans', 'Noto Sans CJK KR', 'Spoqa Han Sans', 'NanumBarunGothic', 'Nanum Gothic', 'KoPub Dotum', 'Malgun Gothic', '맑은 고딕', sans-serif;
 }
 
 input[type=password] {
@@ -346,7 +345,7 @@ del, s, strike {
 }
 
 .Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed {
-    position: fixed;
+    position: static;
     z-index: 999;
 }
 
@@ -462,7 +461,7 @@ del, s, strike {
 
 .Liberty .content-wrapper .liberty-sidebar .right-ads {
     position: absolute;
-    top: 25.73rem;
+    top: 26rem;
     width: 15rem;
 }
     /* 오른쪽 메뉴 수정 End */
@@ -627,10 +626,11 @@ del, s, strike {
 /* 컨텐츠 하단 수정 End */
 
 /* 모달 수정 */
+/*
 .Liberty .login-modal {
 
 }
-
+*/
 .Liberty .login-modal .modal-sm {
     width: 25rem;
 }
