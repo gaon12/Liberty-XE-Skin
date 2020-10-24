@@ -26,14 +26,10 @@ jQuery(function() {
     var getParameter = {
       action: 'query',
       origin: window.location.protocol + '//www.gaonwiki.com/w',
-      list: 'recentchanges',
-      rcprop: 'title|timestamp',
-      rcshow: '!bot|!redirect',
-      rctype: 'edit|new',
-      rclimit: limit,
-      format: 'json',
-      rcnamespace: isDocumentTab? documentNamespaces : topicNamespaces,
-      rctoponly: true
+      list: "recentchanges",
+	  rcprop: "title|ids|sizes|flags|user",
+	  rclimit: "3",
+      format: "json"
     };
     $.ajax({
       url: '//www.gaonwiki.com/w/api.php',
