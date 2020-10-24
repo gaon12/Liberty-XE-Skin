@@ -25,7 +25,7 @@ jQuery(function() {
     }
     var getParameter = {
       action: 'query',
-      origin: window.location.protocol + '//bbs.librewiki.net',
+      origin: window.location.protocol + '//bbs.www.gaonwiki.com/w',
       list: 'recentchanges',
       rcprop: 'title|timestamp',
       rcshow: '!bot|!redirect',
@@ -36,7 +36,7 @@ jQuery(function() {
       rctoponly: true
     };
     $.ajax({
-      url: '//librewiki.net/api.php',
+      url: '//www.gaonwiki.com/w/api.php',
       data: getParameter,
       xhrFields: {
         withCredentials: true
@@ -47,7 +47,7 @@ jQuery(function() {
       var recentChanges = data.query.recentchanges;
       var html = recentChanges.map(function(item) {
         var time = new Date(item.timestamp);
-        var line = '<li><a class="recent-item" href = "https://librewiki.net/wiki/' + encodeURIComponent(item.title) + '" title="' + item.title +'">[' + timeFormat(time) + '] ';
+        var line = '<li><a class="recent-item" href = "https://www.gaonwiki.com/w/wiki/' + encodeURIComponent(item.title) + '" title="' + item.title +'">[' + timeFormat(time) + '] ';
         var text = '';
         if (item.type === 'new') {
           text += '[New]';
