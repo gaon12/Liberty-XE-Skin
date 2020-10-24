@@ -25,7 +25,7 @@ jQuery(function() {
     }
     var getParameter = {
       action: 'query',
-      origin: window.location.protocol + '//bbs.www.gaonwiki.com/w',
+      origin: window.location.protocol + '//www.gaonwiki.com/w',
       list: 'recentchanges',
       rcprop: 'title|timestamp',
       rcshow: '!bot|!redirect',
@@ -47,7 +47,7 @@ jQuery(function() {
       var recentChanges = data.query.recentchanges;
       var html = recentChanges.map(function(item) {
         var time = new Date(item.timestamp);
-        var line = '<li><a class="recent-item" href = "https://www.gaonwiki.com/w/wiki/' + encodeURIComponent(item.title) + '" title="' + item.title +'">[' + timeFormat(time) + '] ';
+        var line = '<li><a class="recent-item" href = "https://www.gaonwiki.com/w/' + encodeURIComponent(item.title) + '" title="' + item.title +'">[' + timeFormat(time) + '] ';
         var text = '';
         if (item.type === 'new') {
           text += '[New]';
